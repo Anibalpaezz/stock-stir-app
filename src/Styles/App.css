@@ -1,0 +1,13 @@
+.app-container {
+     max-width: 1920px;
+     margin: 0 auto;
+     padding: 20px;
+}
+
+.app-header {
+     background-color: #174036;
+     color: #fff;
+     padding: 20px;
+     text-align: center;
+     height: 75px;
+}
