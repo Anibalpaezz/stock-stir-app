@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/stock-stir-app/static/css/main.be718cf1.css",
-    "main.js": "/stock-stir-app/static/js/main.0a42b2cf.js",
+    "main.js": "/stock-stir-app/static/js/main.545bef54.js",
     "static/js/952.ed06840e.chunk.js": "/stock-stir-app/static/js/952.ed06840e.chunk.js",
     "static/media/Logo - SS - ampliado.jpg": "/stock-stir-app/static/media/Logo - SS - ampliado.2d2a2cd41e510a32ddf4.jpg",
     "index.html": "/stock-stir-app/index.html",
     "main.be718cf1.css.map": "/stock-stir-app/static/css/main.be718cf1.css.map",
-    "main.0a42b2cf.js.map": "/stock-stir-app/static/js/main.0a42b2cf.js.map",
+    "main.545bef54.js.map": "/stock-stir-app/static/js/main.545bef54.js.map",
     "952.ed06840e.chunk.js.map": "/stock-stir-app/static/js/952.ed06840e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.be718cf1.css",
-    "static/js/main.0a42b2cf.js"
+    "static/js/main.545bef54.js"
   ]
 }
