@@ -1,16 +1,18 @@
 {
   "files": {
     "main.css": "/stock-stir-app/static/css/main.7e54e4ab.css",
-    "main.js": "/stock-stir-app/static/js/main.887c574b.js",
+    "main.js": "/stock-stir-app/static/js/main.2d04faf5.js",
     "static/js/952.ed06840e.chunk.js": "/stock-stir-app/static/js/952.ed06840e.chunk.js",
     "static/media/Logo-SS-ampliado.jpg": "/stock-stir-app/static/media/Logo-SS-ampliado.2d2a2cd41e510a32ddf4.jpg",
+    "static/media/pasta-alfredo.jpg": "/stock-stir-app/static/media/pasta-alfredo.2ab0ea2c00a15e0ceb5d.jpg",
+    "static/media/tortilla-española.jpg": "/stock-stir-app/static/media/tortilla-española.fdc22b1c547ae3fe77d9.jpg",
     "index.html": "/stock-stir-app/index.html",
     "main.7e54e4ab.css.map": "/stock-stir-app/static/css/main.7e54e4ab.css.map",
-    "main.887c574b.js.map": "/stock-stir-app/static/js/main.887c574b.js.map",
+    "main.2d04faf5.js.map": "/stock-stir-app/static/js/main.2d04faf5.js.map",
     "952.ed06840e.chunk.js.map": "/stock-stir-app/static/js/952.ed06840e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7e54e4ab.css",
-    "static/js/main.887c574b.js"
+    "static/js/main.2d04faf5.js"
   ]
 }
