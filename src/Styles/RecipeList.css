@@ -1,42 +1,66 @@
 .recipe-list {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     gap: 20px;
-     padding: 20px;
-   }
-   
-   .recipe-card {
-     background-color: #fff;
-     border-radius: 10px;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     overflow: hidden;
-     transition: transform 0.3s, box-shadow 0.3s;
-     width: 300px;
-     padding: 20px;
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Ajuste de minmax para anchura mínima y máxima */
+     gap: 16px;
+     padding: 16px;
+}
+
+.recipe-card {
+     border: 1px solid #ccc;
+     border-radius: 8px;
+     padding: 16px;
      text-align: center;
-   }
-   
-   .recipe-card:hover {
+     background-color: #fff;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+     cursor: pointer;
+     height: 100%; /* Asegura que cada tarjeta tenga la misma altura */
+}
+
+.recipe-card:hover {
      transform: translateY(-10px);
      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-   }
-   
-   .recipe-name {
+}
+
+.recipe-name {
      font-size: 1.5em;
      margin-bottom: 10px;
-   }
-   
-   .recipe-description {
+}
+
+.recipe-description {
      font-size: 1.2em;
      margin-bottom: 20px;
-   }
-   
-   .recipe-ingredients {
+}
+
+.recipe-ingredients {
      list-style: none;
      padding: 0;
-   }
-   
-   .recipe-ingredients li {
+}
+
+.recipe-ingredients li {
      font-size: 1.1em;
-   }
+}
+
+@media (max-width: 768px) {
+     .recipe-list {
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+     }
+}
+
+@media (max-width: 480px) {
+     .recipe-list {
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+     }
+
+     .recipe-card {
+          padding: 8px;
+     }
+
+     .recipe-name {
+          font-size: 1em;
+     }
+
+     .recipe-description {
+          font-size: 1em;
+     }
+}

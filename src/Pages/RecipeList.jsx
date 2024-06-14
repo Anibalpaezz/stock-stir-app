@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { supabase } from "../Supabase/supabaseClient";
+import { useAuth } from "../Contexts/AuthContext";
+import { Link } from "react-router-dom";
+
+
 import '../Styles/RecipeList.css';
+import '../Styles/Global.css';
 
 const RecipeList = () => {
      const [recipes, setRecipes] = useState([]);
-     const navigate = useNavigate();
+     const { user } = useAuth();
 
      useEffect(() => {
           const fetchRecipes = async () => {
@@ -46,8 +50,13 @@ const RecipeList = () => {
      }, []);
 
      return (
+          <>
+          <div>
+               {user && (
+                    <Link to="/crear-receta"><button>Crear Receta</button></Link>
+               )}
+          </div>
           <div className="recipe-list">
-               <button onClick={() => navigate('/create-recipe')}>Crear Nueva Receta</button>
                {recipes.map(recipe => (
                     <div className="recipe-card" key={recipe.receta_id}>
                          <h2 className="recipe-name">{recipe.nombre}</h2>
@@ -62,6 +71,7 @@ const RecipeList = () => {
                     </div>
                ))}
           </div>
+          </>
      );
 };
 

@@ -1,0 +1,78 @@
+.footer {
+     background-color: #333;
+     color: #fff;
+     padding: 40px 0;  /* Incrementado para hacer el footer más grande */
+     text-align: center;
+     position: relative;  /* Cambiado a relative */
+     width: 100%;
+     border-radius: 0;
+     margin-top: auto;  /* Asegura que el footer esté al final del contenido */
+}
+
+.footer-content {
+     display: flex;
+     flex-direction: column;  /* Cambiado para una mejor alineación en pantallas pequeñas */
+     align-items: center;
+     max-width: 1200px;  /* Ajustado para una mejor presentación */
+     margin: 0 auto;
+     padding: 0 20px;
+}
+
+.footer-links, .footer-info, .footer-rights {
+     margin-bottom: 20px;  /* Espaciado entre las secciones */
+}
+
+.footer-links a {
+     color: #fff;
+     margin: 0 15px;  /* Aumentado el margen entre enlaces */
+     text-decoration: none;
+     font-size: 16px;  /* Incrementado el tamaño de la fuente */
+}
+
+.footer-links a:hover {
+     text-decoration: underline;
+}
+
+.footer-info p {
+     margin: 5px 0;  /* Espaciado entre líneas de texto */
+     font-size: 16px;  /* Incrementado el tamaño de la fuente */
+}
+
+.footer-social a {
+     color: #fff;
+     margin: 0 10px;
+     font-size: 24px;  /* Tamaño más grande para los iconos */
+     text-decoration: none;
+}
+
+.footer-rights p {
+     margin: 0;
+     font-size: 14px;  /* Ajustado el tamaño de la fuente */
+}
+
+@media (max-width: 768px) {
+     .footer-content {
+          flex-direction: column;
+          text-align: center;
+     }
+
+     .footer-links, .footer-info, .footer-rights {
+          margin-bottom: 15px;
+     }
+
+     .footer-social a {
+          font-size: 20px;  /* Ajustado el tamaño de los iconos en pantallas pequeñas */
+     }
+}
+
+/* Estilo para que el footer se mantenga al final de la página */
+html, body {
+     height: 100%;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+}
+
+main {
+     flex: 1;
+}

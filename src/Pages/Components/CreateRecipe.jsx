@@ -2,6 +2,8 @@ import React, {useState, useEffect} from "react";
 import { supabase } from '../../Supabase/supabaseClient';
 import { useNavigate } from "react-router-dom";
 
+import '../../Styles/Global.css';
+
 const CreateRecipe = () => {
      const [nombre, setNombre] = useState('');
      const [descripcion, setDescripcion] = useState('');

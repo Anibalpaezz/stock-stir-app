@@ -3,12 +3,14 @@ import { supabase } from '../../Supabase/supabaseClient';
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../Contexts/AuthContext";
 
+import '../../Styles/Global.css'
+
 const Login = () => {
      const [email, setEmail] = useState('');
      const [password, setPassword] = useState('');
      const [error, setError] = useState('');
      const navigate = useNavigate();
-     const { login } = useAuth(); // Aquí usamos el contexto
+     const { login } = useAuth();
 
      const handleLogin = async (e) => {
           e.preventDefault();
@@ -17,7 +19,7 @@ const Login = () => {
           try {
                const { data, error } = await supabase
                     .from('usuarios')
-                    .select('usuario_id, correo, rol, contraseña')
+                    .select('usuario_id, nombre, correo, rol, contraseña')
                     .eq('correo', email)
                     .single();
 

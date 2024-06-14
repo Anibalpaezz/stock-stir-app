@@ -1,9 +1,14 @@
+/* Estilos mejorados para NavBar */
+
 .navbar {
      display: flex;
      justify-content: space-between;
      align-items: center;
      padding: 10px 20px;
      background-color: #f8f9fa;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     width: 97%;
+     border-radius: 5px;
 }
 
 .navbar-left,
@@ -37,17 +42,27 @@
      padding: 0;
 }
 
-.navbar-links button {
+/* .navbar-links button {
+     border: none;
+     background-image: linear-gradient(to right, #8fc6e3 0%, #6fa9d2 51%, #4e8ac1 100%);
+     cursor: pointer;
+     padding: 8px 12px;
      border-radius: 5px;
-     margin: 5px;
+     margin: 0 5px;
+     transition: background-color 0.3s ease;
+     color: black;
+     text-decoration: none;
+     transition: 0.5s;
+     background-size: 200% auto;
 }
 
 .navbar-links button:hover {
-     background-color: #174036;
-}
+     background-position: right center;
+} */
 
 .navbar-links li {
      margin: 0 20px;
+     font-size: 16px;
 }
 
 .navbar-links a {

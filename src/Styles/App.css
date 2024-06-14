@@ -1,3 +1,7 @@
+body {
+     background-color: lightcyan;
+}
+
 .app-container {
      max-width: 1920px;
      margin: 0 auto;
@@ -5,9 +9,14 @@
 }
 
 .app-header {
-     background-color: #174036;
-     color: #fff;
-     padding: 20px;
+     background-color: lightblue;
+     color: black;
+     font-size: 25px;
+     padding: 10px;
      text-align: center;
-     height: 75px;
+     align-items: center;
+     border-radius: 5px;
+     width: 98%;
+     height: 100px;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
